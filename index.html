@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEESEIO - Delight In Every Bite | Best Restaurant in Jaranwala</title>
+  <meta name="description" content="CHEESEIO - Premium burgers, loaded pizzas, crispy wings & more in Jaranwala. Free delivery. Order now!">
+  <meta property="og:title" content="CHEESEIO - Delight In Every Bite">
+  <meta property="og:description" content="Premium burgers, loaded pizzas, crispy wings & more — crafted with passion in Jaranwala.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧀</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- AOS Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Preconnect for images -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">🧀</div>
+      <div class="preloader-logo">
+        <span class="logo-cheese">CHEESE</span><span class="logo-io">IO</span>
+      </div>
+      <div class="preloader-tagline">Delight In Every Bite</div>
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">🧀</span>
+        <span class="logo-cheese">CHEESE</span><span class="logo-io">IO</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#deals">Deals</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta-mobile">
+          <a href="https://wa.me/923034031111" class="btn btn-primary" target="_blank">Order Now</a>
+        </li>
+      </ul>
+      <a href="https://wa.me/923034031111" class="btn btn-primary nav-cta" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.359 0-4.542-.804-6.273-2.152l-.438-.353-3.2 1.073 1.073-3.2-.353-.438A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+        Order Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&q=85" alt="" fetchpriority="high">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-float hero-float-1">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Burger">
+    </div>
+    <div class="hero-float hero-float-2">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Pizza">
+    </div>
+    <div class="hero-float hero-float-3">
+      <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=400&q=80" alt="Wings">
+    </div>
+    <div class="hero-float hero-float-badge">
+      <span>⭐</span>
+      <span>Top Rated</span>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+          <span class="badge-dot"></span>
+          Free Delivery in Jaranwala
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="300">
+          Delight In<br><span class="hero-highlight">Every Bite</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Premium burgers, loaded pizzas, crispy wings & more — crafted with passion at <strong>CHEESEIO</strong>, Jaranwala's favourite food destination.</p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+          <a href="#menu" class="btn btn-primary btn-lg btn-glow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            Explore Menu
+          </a>
+          <a href="https://wa.me/923034031111" class="btn btn-glass btn-lg" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.359 0-4.542-.804-6.273-2.152l-.438-.353-3.2 1.073 1.073-3.2-.353-.438A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+            WhatsApp Order
+          </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+          <div class="stat">
+            <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Menu Items</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number-text">FREE</span>
+            <span class="stat-label">Delivery</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="16">0</span>
+            <span class="stat-label">Combo Deals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="mouse-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE TICKER ===== -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <div class="ticker-content">
+        <span>🍕 PIZZA</span><span>🍔 BURGERS</span><span>🍗 WINGS</span><span>🌯 WRAPS</span><span>🧀 CHEESE STICKS</span><span>🥩 STEAKS</span><span>🍟 FRIES</span><span>🥪 SANDWICHES</span><span>FREE DELIVERY</span><span>⭐ TOP RATED</span>
+        <span>🍕 PIZZA</span><span>🍔 BURGERS</span><span>🍗 WINGS</span><span>🌯 WRAPS</span><span>🧀 CHEESE STICKS</span><span>🥩 STEAKS</span><span>🍟 FRIES</span><span>🥪 SANDWICHES</span><span>FREE DELIVERY</span><span>⭐ TOP RATED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORY SHOWCASE ===== -->
+  <section class="category-banner">
+    <div class="container">
+      <div class="category-scroll">
+        <a class="category-item" data-cat="burgers">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200&q=80" alt="Burgers" loading="lazy"></div>
+          <span>Burgers</span>
+        </a>
+        <a class="category-item" data-cat="pizza">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=80" alt="Pizza" loading="lazy"></div>
+          <span>Pizza</span>
+        </a>
+        <a class="category-item" data-cat="pasta">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80" alt="Pasta" loading="lazy"></div>
+          <span>Pasta</span>
+        </a>
+        <a class="category-item" data-cat="wings">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=200&q=80" alt="Wings" loading="lazy"></div>
+          <span>Wings</span>
+        </a>
+        <a class="category-item" data-cat="wraps">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=200&q=80" alt="Wraps" loading="lazy"></div>
+          <span>Wraps</span>
+        </a>
+        <a class="category-item" data-cat="sandwiches">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=200&q=80" alt="Sandwiches" loading="lazy"></div>
+          <span>Sandwiches</span>
+        </a>
+        <a class="category-item" data-cat="fries">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e4?w=200&q=80" alt="Fries" loading="lazy"></div>
+          <span>Fries</span>
+        </a>
+        <a class="category-item" data-cat="platters">
+          <div class="cat-img-wrap"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=200&q=80" alt="Steaks" loading="lazy"></div>
+          <span>Steaks</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Our Menu</span>
+        <h2>Explore Our <span class="gold-text">Delicious</span> Menu</h2>
+        <p>From crunchy starters to loaded pizzas, we've got something for everyone.</p>
+      </div>
+
+      <div class="menu-tabs-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-tabs" id="menuTabs">
+          <button class="tab active" data-category="starters">Starters</button>
+          <button class="tab" data-category="burgers">Burgers</button>
+          <button class="tab" data-category="pizza">Pizza</button>
+          <button class="tab" data-category="pasta">Pasta</button>
+          <button class="tab" data-category="wings">Wings</button>
+          <button class="tab" data-category="wraps">Wraps</button>
+          <button class="tab" data-category="sandwiches">Sandwiches</button>
+          <button class="tab" data-category="fries">Fries</button>
+          <button class="tab" data-category="platters">Platters</button>
+          <button class="tab" data-category="broast">Broast</button>
+          <button class="tab" data-category="beverages">Extras</button>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== DEALS ===== -->
+  <section class="deals-section" id="deals">
+    <div class="deals-bg">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80" alt="" loading="lazy">
+    </div>
+    <div class="deals-overlay"></div>
+    <div class="container deals-content">
+      <div class="section-header section-header-light" data-aos="fade-up">
+        <span class="section-tag">Best Value</span>
+        <h2>Amazing <span class="gold-text">Deals</span></h2>
+        <p>Save more with our combo deals — perfect for family & friends!</p>
+      </div>
+      <div class="deals-grid" id="dealsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images" data-aos="fade-right">
+          <div class="about-img-card card-1">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza" loading="lazy">
+          </div>
+          <div class="about-img-card card-2">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Burger" loading="lazy">
+          </div>
+          <div class="about-img-card card-3">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80" alt="Pasta" loading="lazy">
+          </div>
+          <div class="about-badge">
+            <span class="about-badge-number" data-count="5">0</span><span class="about-badge-plus">+</span>
+            <span class="about-badge-text">Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <span class="section-tag">About Us</span>
+          <h2>Why Choose <span class="gold-text">CHEESEIO</span>?</h2>
+          <p>At CHEESEIO, we believe great food brings people together. Located on Water Works Road, Jaranwala, we serve freshly prepared meals made from premium ingredients. Every bite is crafted with love and passion.</p>
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </div>
+              <div>
+                <h4>Premium Quality</h4>
+                <p>Only the finest, freshest ingredients in every dish.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <div>
+                <h4>Free Delivery</h4>
+                <p>We deliver right to your doorstep — completely free!</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+              </div>
+              <div>
+                <h4>50+ Menu Items</h4>
+                <p>Huge variety from pizza to burgers to steaks & more.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn-primary" style="margin-top:28px">View Full Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Reviews</span>
+        <h2>What Our Customers <span class="gold-text">Say</span></h2>
+        <p>Don't just take our word for it — hear from our happy customers!</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Best pizza in Jaranwala! The Cheeseio Special pizza is absolutely amazing. Fresh ingredients and the cheese pull is incredible. My whole family loves ordering from here."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AH</div>
+            <div>
+              <strong>Ahmed Hassan</strong>
+              <span>Regular Customer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"The Monster Burger is next level! Huge portion, amazing taste, and free delivery. This place has become our go-to for every weekend dinner. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SA</div>
+            <div>
+              <strong>Sara Ali</strong>
+              <span>Food Lover</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Ordered the Deal 4 for a family gathering — two pizzas, pasta and drinks. Everyone was impressed! Great value for money and the food arrived hot and fresh."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">UK</div>
+            <div>
+              <strong>Usman Khan</strong>
+              <span>Verified Order</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARALLAX CTA ===== -->
+  <section class="parallax-banner">
+    <div class="parallax-bg">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=80" alt="" loading="lazy">
+    </div>
+    <div class="parallax-overlay"></div>
+    <div class="container parallax-content" data-aos="zoom-in">
+      <span class="parallax-open">🟢 We're Open Now</span>
+      <h2>Order Now on <span class="gold-text">WhatsApp</span></h2>
+      <p>Skip the wait. Send us your order and we'll deliver it fresh to your door.</p>
+      <div class="parallax-actions">
+        <a href="https://wa.me/923034031111" class="btn btn-primary btn-lg btn-glow" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.359 0-4.542-.804-6.273-2.152l-.438-.353-3.2 1.073 1.073-3.2-.353-.438A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          Chat & Order Now
+        </a>
+        <a href="tel:03034031111" class="btn btn-glass btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          0303-4031111
+        </a>
+      </div>
+      <p class="parallax-hours">Daily: 12:00 PM - 12:00 AM</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact <span class="gold-text">Us</span></h2>
+        <p>Have a question or want to place a large order? Reach out!</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Form -->
+        <div class="contact-form-wrap" data-aos="fade-right">
+          <h3>Send us a Message</h3>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Ahmed" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email (Optional)</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what you'd like to order or ask..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-submit" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" style="display:none">Sending...</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-wrap" data-aos="fade-left">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Call Us</h4>
+              <a href="tel:03034031111">0303-4031111</a>
+              <a href="tel:03457867575">0345-7867575</a>
+              <a href="tel:04114317575">041-4317575</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/923034031111" target="_blank">0303-4031111</a>
+              <small>Tap to chat & order directly</small>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>Water Works Road, Jaranwala</p>
+              <small>Open Daily: 12 PM - 12 AM</small>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </div>
+            <div>
+              <h4>Follow Us</h4>
+              <div class="contact-social">
+                <a href="https://www.tiktok.com/@cheeseio.jaranwala" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/cheeseio.jrw" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/cheeseio" target="_blank">Facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27196.028!2d73.41!3d31.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392269c1e7e2b3d5%3A0x8b8b8b8b8b8b8b8b!2sJaranwala%2C%20Faisalabad%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1" width="100%" height="200" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-icon">🧀</span>
+            <span class="logo-cheese">CHEESE</span><span class="logo-io">IO</span>
+          </a>
+          <p>Delight In Every Bite. Premium food crafted with passion in Jaranwala.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/cheeseio" target="_blank" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/cheeseio.jrw" target="_blank" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@cheeseio.jaranwala" target="_blank" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.11v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13.2a8.16 8.16 0 005.58 2.2V12a4.85 4.85 0 01-5.58-2.2V2h3.45a4.83 4.83 0 002.13 4.69z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#deals">Deals</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <a href="tel:03034031111">0303-4031111</a>
+          <a href="tel:03457867575">0345-7867575</a>
+          <a href="tel:04114317575">041-4317575</a>
+          <p>Water Works Road, Jaranwala</p>
+        </div>
+        <div class="footer-links">
+          <h4>Opening Hours</h4>
+          <p>Monday - Sunday</p>
+          <p class="gold-text" style="font-weight:600">12:00 PM - 12:00 AM</p>
+          <a href="https://wa.me/923034031111" target="_blank" class="btn btn-primary footer-order-btn">Order on WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CHEESEIO. All rights reserved. Made with ❤️ in Jaranwala</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923034031111" class="whatsapp-float" target="_blank" aria-label="Order on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.359 0-4.542-.804-6.273-2.152l-.438-.353-3.2 1.073 1.073-3.2-.353-.438A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+    <span class="whatsapp-tooltip">Order Now!</span>
+  </a>
+
+  <!-- Toast container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- EmailJS SDK -->
+  <!--
+    ================================================
+    EMAILJS SETUP (3 Steps):
+    1. Go to https://www.emailjs.com and create a free account
+    2. Add your email service (Gmail, Outlook, etc)
+    3. Create an email template
+    4. Replace the IDs below with your own:
+       - YOUR_PUBLIC_KEY
+       - YOUR_SERVICE_ID
+       - YOUR_TEMPLATE_ID
+    ================================================
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
